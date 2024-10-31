@@ -1,0 +1,149 @@
+Abaqus/Explicit 2022.HF8                         DATE 31-Oct-2024  TIME 16:46:17
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 2 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass in model = 12.013
+   Center of mass of model = ( 1.482336E+03, 5.999120E+02)
+
+   Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          3.975654E+06                  8.298917E+06
+      I(YY)          6.100300E+06                  3.249580E+07
+      I(XY)          1.718936E+06                 -8.963512E+06
+      I(ZZ)          1.007595E+07                  4.079472E+07
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state.
+
+
+   Initial time increment = 2.86573E-03
+
+   Statistics for all elements:
+      Mean = 6.64755E-03
+      Standard deviation = 3.15058E-03
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+    (Instance name)
+   ----------------------------------------------------------
+           2          1       2.865727E-03      1.000000E+00
+    DYNAMICTRUSS-1
+           4          2       5.126369E-03      5.590169E-01
+    DYNAMICTRUSS-1
+           1          3       6.053822E-03      4.733748E-01
+    DYNAMICTRUSS-1
+           3          4       7.960353E-03      3.600000E-01
+    DYNAMICTRUSS-1
+           5          5       1.123149E-02      2.551511E-01
+    DYNAMICTRUSS-1
+
+
+  Instance name for the most critical element will be printed if the critical
+  element changes or at the beginning of a new page.
+
+
+
+Abaqus/Explicit 2022.HF8                         DATE 31-Oct-2024  TIME 16:46:20
+
+The single precision Abaqus/Explicit executable will be used in this analysis.
+
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 0.9 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL      STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 0.000E+00  00:00:00 2.866E-03           2  0.000E+00  0.000E+00
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number   0, of   20, at step time 0.000E+00
+      182  1.000E+00 1.000E+00  00:00:00 5.677E-03           2  1.797E+04 -4.689E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number   1, of   20, at step time 1.000E+00
+      359  2.005E+00 2.005E+00  00:00:00 5.673E-03           2  4.819E+02 -4.634E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number   2, of   20, at step time 2.005E+00
+      535  3.004E+00 3.004E+00  00:00:00 5.676E-03           2  6.455E+03 -4.690E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number   3, of   20, at step time 3.004E+00
+      711  4.003E+00 4.003E+00  00:00:00 5.676E-03           2  1.625E+03 -4.679E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number   4, of   20, at step time 4.003E+00
+      887  5.002E+00 5.002E+00  00:00:00 5.675E-03           2  1.880E+03 -4.687E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number   5, of   20, at step time 5.002E+00
+     1063  6.000E+00 6.000E+00  00:00:00 5.675E-03           2  1.740E+03 -4.692E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number   6, of   20, at step time 6.000E+00
+     1240  7.005E+00 7.005E+00  00:00:00 5.676E-03           2  5.179E+02 -4.690E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number   7, of   20, at step time 7.005E+00
+     1416  8.004E+00 8.004E+00  00:00:00 5.676E-03           2  1.130E+03 -4.695E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number   8, of   20, at step time 8.004E+00
+     1592  9.003E+00 9.003E+00  00:00:00 5.675E-03           2  3.070E+01 -4.692E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number   9, of   20, at step time 9.003E+00
+     1768  1.000E+01 1.000E+01  00:00:01 5.676E-03           2  6.464E+02 -4.696E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number  10, of   20, at step time 1.000E+01
+     1944  1.100E+01 1.100E+01  00:00:01 5.676E-03           2  1.593E+01 -4.694E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number  11, of   20, at step time 1.100E+01
+     2121  1.200E+01 1.200E+01  00:00:01 5.675E-03           2  3.030E+02 -4.695E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number  12, of   20, at step time 1.200E+01
+     2297  1.300E+01 1.300E+01  00:00:01 5.675E-03           2  3.875E+01 -4.695E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number  13, of   20, at step time 1.300E+01
+     2473  1.400E+01 1.400E+01  00:00:01 5.676E-03           2  1.074E+02 -4.695E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number  14, of   20, at step time 1.400E+01
+     2649  1.500E+01 1.500E+01  00:00:01 5.676E-03           2  5.809E+01 -4.695E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number  15, of   20, at step time 1.500E+01
+     2825  1.600E+01 1.600E+01  00:00:01 5.676E-03           2  2.440E+01 -4.695E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number  16, of   20, at step time 1.600E+01
+     3002  1.701E+01 1.701E+01  00:00:01 5.676E-03           2  4.165E+01 -4.695E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number  17, of   20, at step time 1.701E+01
+     3178  1.800E+01 1.800E+01  00:00:01 5.675E-03           2  4.609E+00 -4.695E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number  18, of   20, at step time 1.800E+01
+     3354  1.900E+01 1.900E+01  00:00:01 5.676E-03           2  2.729E+01 -4.696E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Output Field Frame Number  19, of   20, at step time 1.900E+01
+     3530  2.000E+01 2.000E+01  00:00:01 5.675E-03           2  1.101E-01 -4.695E+03
+INSTANCE WITH CRITICAL ELEMENT: DYNAMICTRUSS-1
+Restart Number  1 at 20.000
+Output Field Frame Number  20, of   20, at step time 2.000E+01
+  EXPLICIT EXECUTABLE TIME SUMMARY
+       USER TIME (SEC)      =  0.20000
+       SYSTEM TIME (SEC)    =  0.10000
+       WALLCLOCK TIME (SEC) =            1
+              INIT (SEC) =          0
+              MAIN (SEC) =          1
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+

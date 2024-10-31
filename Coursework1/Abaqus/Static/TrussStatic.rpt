@@ -1,0 +1,58 @@
+********************************************************************************
+Field Output Report, written Thu Oct 31 14:41:42 2024
+
+Source 1
+---------
+
+   ODB: M:/Documents/AERO417/AERO417/Coursework1/Abaqus/Static/Job-3.odb
+   Step: Apply_loads
+   Frame: Increment      1: Step Time =    1.000
+
+Loc 1 : Nodal values from source 1
+
+Output sorted by column "Node Label".
+
+Field Output reported at nodes for region: TRUSS_PART-1.Region_1
+   Computation algorithm: EXTRAPOLATE_COMPUTE_AVERAGE
+   Averaged at nodes
+   Averaging regions: ODB_REGIONS
+
+      Node Label          RF.RF1          RF.RF2            U.U1            U.U2           S.S11
+                          @Loc 1          @Loc 1          @Loc 1          @Loc 1          @Loc 1
+-------------------------------------------------------------------------------------------------
+               1    -31.2712E+03    -86.8644E+03     31.2712E-33     86.8644E-33        -92.3218
+               2              0.              0.        -2.55909         1.42025        -92.3218
+
+
+  Minimum           -31.2712E+03    -86.8644E+03        -2.55909     86.8644E-33        -92.3218
+         At Node               1               1               2               1               2
+
+  Maximum                     0.              0.     31.2712E-33         1.42025        -92.3218
+         At Node               2               2               1               2               2
+
+           Total    -31.2712E+03    -86.8644E+03        -2.55909         1.42025        -184.644
+
+
+Field Output reported at nodes for region: TRUSS_PART-1.Region_2
+   Computation algorithm: EXTRAPOLATE_COMPUTE_AVERAGE
+   Averaged at nodes
+   Averaging regions: ODB_REGIONS
+
+      Node Label          RF.RF1          RF.RF2            U.U1            U.U2           S.S11
+                          @Loc 1          @Loc 1          @Loc 1          @Loc 1          @Loc 1
+-------------------------------------------------------------------------------------------------
+               2              0.              0.        -2.55909         1.42025        -293.721
+               3              0.              0.        -4.20002        -3.44264        -195.814
+               4     26.2712E+03              0.    -26.2712E-33     565.648E-03        -212.538
+               5             -0.    -13.1356E+03              0.     13.1356E-33        -65.6780
+
+
+  Minimum                    -0.    -13.1356E+03        -4.20002        -3.44264        -293.721
+         At Node               5               5               3               3               2
+
+  Maximum            26.2712E+03              0.              0.         1.42025        -65.6780
+         At Node               4               4               5               2               5
+
+           Total     26.2712E+03    -13.1356E+03        -6.75912        -1.45674        -767.751
+
+

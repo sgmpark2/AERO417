@@ -1,0 +1,64 @@
+********************************************************************************
+Probe Values Report, written on Thu Oct 31 12:58:09 2024
+
+Source
+-------
+
+   ODB: M:/Documents/AERO417/AERO417/Coursework1/Abaqus/Static/Job-1.odb
+   Step: Apply_loads
+   Frame: Increment      1: Step Time =    1.000
+   Variable: U, U1
+
+Probe values reported at nodes
+
+  Part Instance     Node ID            Orig. Coords                     Def. Coords          
+                                 X          Y          Z          X          Y          Z    
+-------------------------------------------------------------------------------------------
+  TRUSS_PART-1           1     2.E+03    1.0E+03        0.0     2.E+03    1.0E+03        0.0
+
+
+  Part Instance     Node ID  Attached elements      U, U1
+----------------------------------------------------------
+  TRUSS_PART-1           1          1    31.E-33
+
+
+********************************************************************************
+Probe Values Report, written on Thu Oct 31 13:45:22 2024
+
+Source
+-------
+
+   ODB: M:/Documents/AERO417/AERO417/Coursework1/Abaqus/Static/Job-2.odb
+   Step: Apply_loads
+   Frame: Increment      1: Step Time =    1.000
+   Variable: U, U1
+
+Loc 1 : Integration point values
+
+Probe values reported at integration points
+
+  Part Instance  Element ID        Type  Attached nodes
+--------------------------------------------------------------------------------
+  TRUSS_PART-1           1        T2D2           1           2
+
+
+********************************************************************************
+Probe Values Report, written on Thu Oct 31 13:54:19 2024
+
+Source
+-------
+
+   ODB: M:/Documents/AERO417/AERO417/Coursework1/Abaqus/Static/Job-2.odb
+   Step: Apply_loads
+   Frame: Increment      1: Step Time =    1.000
+   Variable: U, U1
+
+Loc 1 : Integration point values
+
+Probe values reported at integration points
+
+  Part Instance  Element ID        Type  Attached nodes
+--------------------------------------------------------------------------------
+  TRUSS_PART-1           1        T2D2           1           2
+
+
