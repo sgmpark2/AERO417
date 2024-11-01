@@ -1,0 +1,20 @@
+<?xml version="1.0"?><msgwrapper><Started><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">Job-2</jobName><clientHost type="string">HCBC-052</clientHost><handle type="integer">0</handle></Started>
+<Warning><message type="string">FOR TWO-DIMENSIONAL MODELS, IF A NON-UNITY THICKNESS IS SPECIFIED FOR TWO-DIMENSIONAL SOLID ELEMENTS AND THESE ELEMENTS ARE INVOLVED IN AN INTERACTION SUCH AS CONTACT, THE SAME THICKNESS SHOULD BE SPECIFIED FOR THE OUT-OF-PLANE THICKNESS OF THE CORRESPONDING SURFACE UNDER *SURFACE INTERACTION.</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">Job-2</jobName></Warning>
+<Warning><message type="string">Boundary conditions are specified on inactive dof 6 at 1 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof6.</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">Job-2</jobName></Warning>
+<Odb_File><file type="string">M:\Documents\AERO417\AERO417\Coursework1\Abaqus\Modal\Job-2.odb</file><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">Job-2</jobName></Odb_File>
+<Completed><message type="string">Analysis phase complete</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">Job-2</jobName></Completed>
+<Started><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName><clientHost type="string">HCBC-052</clientHost><handle type="integer">8160</handle></Started>
+<Step><stepId type="integer">1</stepId><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName></Step>
+<Odb_Frame><step type="integer">0</step><frame type="integer">0</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName></Odb_Frame>
+<MEMORY_ESTIMATE><memory type="float">27</memory><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName></MEMORY_ESTIMATE>
+<PHYSICAL_MEMORY><physical_memory type="float">16165</physical_memory><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName></PHYSICAL_MEMORY>
+<MINIMUM_MEMORY><minimum_memory type="float">18</minimum_memory><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName></MINIMUM_MEMORY>
+<Odb_Frame><step type="integer">0</step><frame type="integer">1</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">2</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">3</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">4</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">5</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName></Odb_Frame>
+<Status><step type="integer">1</step><increment type="integer">1</increment><attempts type="integer">1</attempts><severe type="integer">0</severe><equilibrium type="integer">0</equilibrium><iterations type="integer">0</iterations><totalTime type="float">0</totalTime><stepTime type="float">1e-36</stepTime><timeIncrement type="float">1e-36</timeIncrement><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName></Status>
+<End_Step><stepId type="integer">1</stepId><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName></End_Step>
+<Completed><message type="string">Analysis phase complete</message><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">Job-2</jobName></Completed>
+<JOB_COMPLETED><jobName type="string">Job-2</jobName><time type="string">Fri Nov  1 14:27:18 2024</time></JOB_COMPLETED></msgwrapper>
