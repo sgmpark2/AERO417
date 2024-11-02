@@ -111,8 +111,8 @@ u(:,2) = (dt^2/2) * a;
 
 
 
-alpha = 0.002;
-beta = 0.0002;
+alpha = 0.0007;
+beta = 0.00007;
 damping = 0.5;
 
 C_reduced = alpha * M + beta * K;

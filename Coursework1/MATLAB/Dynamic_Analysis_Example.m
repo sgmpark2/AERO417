@@ -76,9 +76,9 @@ u(:,2) = (dt^2/2) * a;
 
 
 
-alpha = 0.002;
-beta = 0.0002;
-damping = 0.5;
+alpha = 0.0007;
+beta = 0.0001;
+damping = 0.1;
 
 C_reduced = alpha * M + beta * K;
 %{
@@ -109,15 +109,25 @@ for i = 2:n_steps-1
     u(:,i+1) = inv(M) * (F - K * u(:,i) - C_reduced * (u(:,i) - u(:,i-1)) / dt) * dt^2 + 2*u(:,i) - u(:,i-1);
 end
 
+abaqus = readtable('abaqus.txt');
+
+
 figure;
 subplot(2,1,1);
 plot(t,u(1,:));
+hold on
+plot(abaqus.X,abaqus.x_1_1)
 xlabel('Time (s)')
 ylabel('Displacement in X (m)')
 title('Dynamic Response at node 1 in X direction')
 
 subplot(2,1,2);
 plot(t,u(2,:));
+hold on
+plot(abaqus.X,abaqus.x_1_1_1)
 xlabel('Time (s)')
 ylabel('Displacement in Y (m)')
 title('Dynamic Response at node 1 in Y direction')
+
+
+
