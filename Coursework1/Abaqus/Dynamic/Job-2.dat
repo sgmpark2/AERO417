@@ -1,6 +1,6 @@
 1
 
-   Abaqus 2022.HF8                                  Date 31-Oct-2024   Time 16:44:39
+   Abaqus 2022.HF8                                  Date 02-Nov-2024   Time 13:47:13
    For use by UNIVERSITY OF LIVERPOOL under license from Dassault Systemes or its subsidiary.
 
 
@@ -18,7 +18,7 @@
                    used or reproduced only in accordance with the terms
                    of such license.
  
-                          On machine HCBC-034 
+                          On machine HCBC-031 
                           you are authorized to run
                           Abaqus/Explicit until 31-Jan-2025
 
@@ -80,43 +80,45 @@
   *Heading
   *Node
   *Element, type=T2D2
-  *Nset, nset=ASSEMBLY_DYNAMICTRUSS-1_SET-1
-  *Nset, nset=ASSEMBLY_DYNAMICTRUSS-1_SET-2
-  *Elset, elset=ASSEMBLY_DYNAMICTRUSS-1_SET-1
-  *Elset, elset=ASSEMBLY_DYNAMICTRUSS-1_SET-2
-  *Nset, nset=ASSEMBLY_NODE_1
-  *Nset, nset=ASSEMBLY_NODE_2
-  *Nset, nset=ASSEMBLY_NODE_3
+  *Nset, nset=ASSEMBLY_PART-1-1_SET-1
+  *Nset, nset=ASSEMBLY_PART-1-1_SET-2
+  *Elset, elset=ASSEMBLY_PART-1-1_SET-1
+  *Elset, elset=ASSEMBLY_PART-1-1_SET-2
+  *Nset, nset="ASSEMBLY_Node  2"
+  *Nset, nset="ASSEMBLY_Node 3"
+  *Nset, nset="ASSEMBLY_Node 4"
   *Nset, nset=ASSEMBLY_SET-1
   *Nset, nset=ASSEMBLY_SET-2
   *Nset, nset=ASSEMBLY_SET-6
   *material, name=STEEL
   *density
   *elastic
-  *solidsection, elset=ASSEMBLY_DYNAMICTRUSS-1_SET-1, material=STEEL
-  *solidsection, elset=ASSEMBLY_DYNAMICTRUSS-1_SET-2, material=STEEL
-  *solidsection, elset=ASSEMBLY_DYNAMICTRUSS-1_SET-1, material=STEEL
+  *solidsection, elset=ASSEMBLY_PART-1-1_SET-1, material=STEEL
+  *solidsection, elset=ASSEMBLY_PART-1-1_SET-2, material=STEEL
+  *solidsection, elset=ASSEMBLY_PART-1-1_SET-1, material=STEEL
 
  ***WARNING: FOR TWO-DIMENSIONAL MODELS, IF A NON-UNITY THICKNESS IS SPECIFIED 
              FOR TWO-DIMENSIONAL SOLID ELEMENTS AND THESE ELEMENTS ARE INVOLVED 
              IN AN INTERACTION SUCH AS CONTACT, THE SAME THICKNESS SHOULD BE 
              SPECIFIED FOR THE OUT-OF-PLANE THICKNESS OF THE CORRESPONDING 
              SURFACE UNDER *SURFACE INTERACTION.
-  *solidsection, elset=ASSEMBLY_DYNAMICTRUSS-1_SET-2, material=STEEL
+  *solidsection, elset=ASSEMBLY_PART-1-1_SET-2, material=STEEL
   *boundary
   *boundary
-  *solidsection, elset=ASSEMBLY_DYNAMICTRUSS-1_SET-1, material=STEEL
-  *solidsection, elset=ASSEMBLY_DYNAMICTRUSS-1_SET-2, material=STEEL
+  *solidsection, elset=ASSEMBLY_PART-1-1_SET-1, material=STEEL
+  *solidsection, elset=ASSEMBLY_PART-1-1_SET-2, material=STEEL
   *output, field, variable=PRESELECT
   *output, history, frequency=1
+  *output, history, variable=PRESELECT
   *Step, name=transient, nlgeom=YES
   *Step, name=transient, nlgeom=YES
   *dynamic, explicit
   *output, field, variable=PRESELECT
   *output, history, frequency=1
-  *nodeoutput, nset=ASSEMBLY_NODE_1
-  *nodeoutput, nset=ASSEMBLY_NODE_2
-  *nodeoutput, nset=ASSEMBLY_NODE_3
+  *nodeoutput, nset="ASSEMBLY_Node  2"
+  *nodeoutput, nset="ASSEMBLY_Node 3"
+  *nodeoutput, nset="ASSEMBLY_Node 4"
+  *output, history, variable=PRESELECT
   *endstep
   *boundary
   *boundary
@@ -148,6 +150,6 @@
 
      JOB TIME SUMMARY
        USER TIME (SEC)      =      0.0    
-       SYSTEM TIME (SEC)    =      0.0    
-       TOTAL CPU TIME (SEC) =      0.0    
+       SYSTEM TIME (SEC)    =     0.10    
+       TOTAL CPU TIME (SEC) =     0.10    
        WALLCLOCK TIME (SEC) =            0
