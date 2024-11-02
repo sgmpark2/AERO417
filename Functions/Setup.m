@@ -1,4 +1,4 @@
-function [E,A1,A2t5,L1,L2,L3,L4,L5,Theta1,Theta2,Theta3,Theta4,Theta5,k1,k2,k3,k4,k5] = Setup()
+function [E,A1,A2t5,L1,L2,L3,L4,L5,Theta1,Theta2,Theta3,Theta4,Theta5,K,k] = Setup()
 
     % Material properties and cross-sectional area
     E = 209e9;   % Young's Modulus (Pa)
@@ -34,4 +34,17 @@ function [E,A1,A2t5,L1,L2,L3,L4,L5,Theta1,Theta2,Theta3,Theta4,Theta5,k1,k2,k3,k
     k3 = PlaneTrussElementStiffness(E, A2t5, L3, Theta3); % Stiffness of element 3
     k4 = PlaneTrussElementStiffness(E, A2t5, L4, Theta4); % Stiffness of element 4
     k5 = PlaneTrussElementStiffness(E, A2t5, L5, Theta5); % Stiffness of element 5
+
+    % Initialise global stiffness matrix (8x8 since we have 4 nodes with 2 DOF each)
+    K = zeros(10, 10);
+    
+    % Assembly of global stiffness matrix from element stiffness matrices
+    K = PlaneTrussAssemble(K, k1, 1, 2); % Assemble element 1 between nodes 1 and 2
+    K = PlaneTrussAssemble(K, k2, 2, 3); % Assemble element 2 between nodes 2 and 3
+    K = PlaneTrussAssemble(K, k3, 3, 4); % Assemble element 3 between nodes 3 and 4
+    K = PlaneTrussAssemble(K, k4, 4, 5); % Assemble element 4 between nodes 4 and 5
+    K = PlaneTrussAssemble(K, k5, 3, 5); % Assemble element 5 between nodes 3 and 5
+    
+    % Extract the reduced stiffness matrix for free degrees of freedom (DOF)
+    k = K([3,4,5,6,8] , [3,4,5,6,8]); % Node 2 is free (not fixed)
 end
