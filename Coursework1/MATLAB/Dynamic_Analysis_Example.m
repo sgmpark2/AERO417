@@ -1,8 +1,12 @@
+clear, clc, close all
+warning off
 % Define the properties of the truss
 E = 200e9; % Young's modulus in Pascals
 A = 6e-4; % Cross-sectional area in m^2
 L = 3; % Length of each element in meters
 rho =7800; % Density in kg/m^3
+
+abaqus = readtable('abaqus.txt');
 
 % Define the nodes and elements
 nodes = [0 0; L 0; 0 L;L L]; % Node coordinates
@@ -63,7 +67,7 @@ M = M(freeDofs, freeDofs);
 
 
 
-dt = 0.0001;
+dt = 0.2 / (height(abaqus) - 1);
 t_total = 0.2;
 t = 0:dt:t_total;
 n_steps = length(t);
@@ -76,41 +80,45 @@ u(:,2) = (dt^2/2) * a;
 
 
 
-alpha = 0.0007;
-beta = 0.0001;
-damping = 0.1;
+%alpha = 0.00001;
+%beta = 0.00001;0.00001:0.00001:0.001
+difCounter = 1;
+alpha_r = 0.00001:0.00001:0.001;
+beta_r = 3.000e-05:1e-7:4.000e-05;
 
-C_reduced = alpha * M + beta * K;
-%{
-for i = 1:n_steps-1
-    
-    u_pred = u(:,i) + dt*v + (dt^2/2)*a;
+for j = alpha_r
+    for k = beta_r
+        alpha = j;
+        beta = k;
+        C_reduced = alpha * M + beta * K;
+        for i = 2:n_steps-1
+            u(:,i+1) = inv(M) * (F - K * u(:,i) - C_reduced * (u(:,i) - u(:,i-1)) / dt) * dt^2 + 2*u(:,i) - u(:,i-1);
+        end
+        dif(difCounter) = sum(abs(u(1,:) - (abaqus.x_1_1(:,1))'));
+        difCounter = difCounter + 1;
+    end
+end
+%dif = abs(dif);
 
-    F_eff = F - K * u_pred;
 
-    a_next = inv(M + beta*dt^2*K) * F;
+smallest = find(dif == min(dif));
 
 
-    % Update displacement and velocity
-    v = v + dt * (1 - gamma) * a + dt * gamma * (K \ F);
-    u(:,i) = u_pred;
+beta_s = mod(smallest, 100);   % 53
+alpha_s = (smallest - beta_s) / 100; % y = 9
+
+if alpha_s == 0
+    alpha_s = 1;
 end
 
-% Plot results
-figure;
-plot(t, u(2,:));
-xlabel('Time (s)');
-ylabel('Displacement (m)');
-title('Dynamic Response of Truss Nodes');
-grid on;
-%}
+alpha = alpha_r(alpha_s);
+beta = beta_r(beta_s);
 
+C_reduced = alpha * M + beta * K;
 for i = 2:n_steps-1
     u(:,i+1) = inv(M) * (F - K * u(:,i) - C_reduced * (u(:,i) - u(:,i-1)) / dt) * dt^2 + 2*u(:,i) - u(:,i-1);
 end
-
 abaqus = readtable('abaqus.txt');
-
 
 figure;
 subplot(2,1,1);
@@ -128,6 +136,7 @@ plot(abaqus.X,abaqus.x_1_1_1)
 xlabel('Time (s)')
 ylabel('Displacement in Y (m)')
 title('Dynamic Response at node 1 in Y direction')
+
 
 
 
