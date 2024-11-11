@@ -1,24 +1,24 @@
 Analysis initiated from SIMULIA established products
-Abaqus JOB Job-4
+Abaqus JOB Job-5
 Abaqus 2022.HF8
 USING MEMORY DOUG-LEA ALLOCATOR
 Abaqus License Manager checked out the following licenses:
 Abaqus/Explicit checked out 5 tokens from Flexnet server licensebroker23.
 <143 out of 160 licenses remain available>.
 Begin Analysis Input File Processor
-11/11/2024 17:19:59
+11/11/2024 17:21:56
 Run pre.exe
-11/11/2024 17:20:03
+11/11/2024 17:22:01
 End Analysis Input File Processor
 Begin Abaqus/Explicit Packager
-11/11/2024 17:20:03
+11/11/2024 17:22:01
 PAC_NUM_THREADS VALUE: 1
 Run package.exe
-11/11/2024 17:20:07
+11/11/2024 17:22:06
 End Abaqus/Explicit Packager
 Begin Abaqus/Explicit Analysis
-11/11/2024 17:20:07
+11/11/2024 17:22:06
 Run explicit.exe
-11/11/2024 17:20:13
+11/11/2024 17:22:15
 End Abaqus/Explicit Analysis
-Abaqus JOB Job-4 COMPLETED
+Abaqus JOB Job-5 COMPLETED

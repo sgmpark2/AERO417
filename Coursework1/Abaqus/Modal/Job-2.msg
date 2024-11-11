@@ -1,6 +1,6 @@
 1
 
-   Abaqus 2022.HF8                                  Date 01-Nov-2024   Time 14:27:14
+   Abaqus 2022.HF8                                  Date 11-Nov-2024   Time 16:56:38
    For use by UNIVERSITY OF LIVERPOOL under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -33,7 +33,7 @@
 
      EXTRAPOLATION WILL NOT BE USED
 
-     CHARACTERISTIC ELEMENT LENGTH     1.167E+03
+     CHARACTERISTIC ELEMENT LENGTH      1.17    
 
      DETAILS REGARDING ACTUAL SOLUTION WAVEFRONT REQUESTED
 
@@ -52,8 +52,8 @@
   
  NUMBER OF EQUATIONS                                                          10
  NUMBER OF UNRESTRAINED DEGREES OF FREEDOM                                     5
- HEURISTIC SCALE FOR THE FIRST NONZERO EIGENVALUES (PROBLEM SCALE)   3.96902e+02
- INITIAL SHIFT VALUE                                                -3.96902e+02
+ HEURISTIC SCALE FOR THE FIRST NONZERO EIGENVALUES (PROBLEM SCALE)   3.96902e+05
+ INITIAL SHIFT VALUE                                                -3.96902e+05
   
  NUMBER OF CPUS USED BY DIRECT SOLVER     1
   
@@ -77,7 +77,7 @@
  NUMBER OF ACCEPTED EIGENVALUES    5
   
  ACCEPTED EIGENVALUES
-   6.04699e+02  3.25456e+03  2.81078e+04  4.47457e+04  5.18337e+04
+   6.04699e+05  3.25456e+06  2.81078e+07  4.47457e+07  5.18337e+07
   
  FACTORIZATION WITH NEW SHIFT VALUE IS REQUIRED
   
@@ -90,7 +90,7 @@
  |      ENDS OF INTERVAL     |     ENDS OF SENTINEL      |   COMPUTATIONAL INTERVAL  |
  -------------------------------------------------------------------------------------
  |  -  |      0 |        0        0 |     0     0 |     0     0 |      0     5       |
- | -3.95574e+37 -3.96902e+02 | -3.95574e+37 -3.96902e+02 | -3.95574e+37  3.95574e+37 |
+ | -3.95574e+37 -3.96902e+05 | -3.95574e+37 -3.96902e+05 | -3.95574e+37  3.95574e+37 |
  -------------------------------------------------------------------------------------
   
  DATA FOR CHOOSING SHIFT
@@ -98,13 +98,13 @@
  NUMBER OF EIGENVALUES NEEDED IN THE PRIMARY TRUST INTERVAL    5
   
  NUMBER OF MODES FORMING SENTINEL TO THE RIGHT    5
- SHIFT RIGHT         1.03542e+05
+ SHIFT RIGHT         1.03542e+08
   
  NUMBER OF MODES FORMING SENTINEL TO THE LEFT     0
- SHIFT LEFT         -3.96902e+02
+ SHIFT LEFT         -3.96902e+05
   
  SHIFTING TO THE RIGHT DIRECTION
- NEW SHIFT           1.03542e+05
+ NEW SHIFT           1.03542e+08
   
  NUMBER OF NEGATIVE EIGENVALUES     5
  NUMBER OF POSITIVE EIGENVALUES     5
@@ -120,13 +120,13 @@
  |      ENDS OF INTERVAL     |     ENDS OF SENTINEL      |   COMPUTATIONAL INTERVAL  |
  -------------------------------------------------------------------------------------
  |  +  |      5 |        0        5 |     0     0 |     0     0 |      0     0       |
- | -3.95574e+37  1.03542e+05 | -3.95574e+37  1.03542e+05 | -3.95574e+37  1.03542e+05 |
+ | -3.95574e+37  1.03542e+08 | -3.95574e+37  1.03542e+08 | -3.95574e+37  1.03542e+08 |
  -------------------------------------------------------------------------------------
   
  FIRST EIGENVALUE REQUESTED BY THE USER     1
   
  EIGENVALUES REQUESTED BY THE USER
-   6.04699e+02  3.25456e+03  2.81078e+04  4.47457e+04  5.18337e+04
+   6.04699e+05  3.25456e+06  2.81078e+07  4.47457e+07  5.18337e+07
   
  EIGENVALUE EXTRACTION USING THE LANCZOS EIGENSOLVER IS COMPLETE
  NUMBER OF LANCZOS RUNS       :   1
@@ -166,7 +166,7 @@
 
      JOB TIME SUMMARY
        USER TIME (SEC)      =     0.40    
-       SYSTEM TIME (SEC)    =     0.20    
-       TOTAL CPU TIME (SEC) =     0.60    
-       WALLCLOCK TIME (SEC) =            1
+       SYSTEM TIME (SEC)    =     0.10    
+       TOTAL CPU TIME (SEC) =     0.50    
+       WALLCLOCK TIME (SEC) =            2
        MEMORY PEAK (GB)     =            0

@@ -1,6 +1,6 @@
 1
 
-   Abaqus 2022.HF8                                  Date 01-Nov-2024   Time 14:27:10
+   Abaqus 2022.HF8                                  Date 11-Nov-2024   Time 16:56:33
    For use by UNIVERSITY OF LIVERPOOL under license from Dassault Systemes or its subsidiary.
 
 
@@ -18,7 +18,7 @@
                    used or reproduced only in accordance with the terms
                    of such license.
  
-                          On machine HCBC-052 
+                          On machine HCBC-005 
                           you are authorized to run
                           Abaqus/Foundation until 31-Jan-2025
 
@@ -157,7 +157,7 @@
        WALLCLOCK TIME (SEC) =            1
 1
 
-   Abaqus 2022.HF8                                  Date 01-Nov-2024   Time 14:27:14
+   Abaqus 2022.HF8                                  Date 11-Nov-2024   Time 16:56:38
    For use by UNIVERSITY OF LIVERPOOL under license from Dassault Systemes or its subsidiary.
 
                                                                                                STEP    1  INCREMENT    1
@@ -196,31 +196,31 @@
 
                     LOCATION OF THE CENTER OF MASS OF THE MODEL
 
-                       1482.336           599.9119    
+                       1.482336          0.5999119    
 
 
                     MOMENT OF INERTIA ABOUT THE ORIGIN
                            I(ZZ)
 
-                      4.0794713E+07
+                       40.79471    
 
 
                     PRODUCT OF INERTIA ABOUT THE ORIGIN
                            I(XY)
 
-                      -8963511.    
+                      -8.963511    
 
 
                     MOMENT OF INERTIA ABOUT THE CENTER OF MASS
                            I(ZZ)
 
-                      1.0075953E+07
+                       10.07595    
 
 
                     PRODUCT OF INERTIA ABOUT THE CENTER OF MASS
                            I(XY)
 
-                       1718935.    
+                       1.718936    
   
                    M E M O R Y   E S T I M A T E
   
@@ -267,35 +267,35 @@
                              (RAD/TIME)   (CYCLES/TIME)
 
 
-       1       604.70         24.591         3.9137         1.0000         0.0000    
-       2       3254.6         57.049         9.0796         1.0000         0.0000    
-       3       28108.         167.65         26.683         1.0000         0.0000    
-       4       44746.         211.53         33.666         1.0000         0.0000    
-       5       51834.         227.67         36.235         1.0000         0.0000    
+       1      6.04699E+05     777.62         123.76         1.0000         0.0000    
+       2      3.25456E+06     1804.0         287.12         1.0000         0.0000    
+       3      2.81078E+07     5301.7         843.79         1.0000         0.0000    
+       4      4.47457E+07     6689.2         1064.6         1.0000         0.0000    
+       5      5.18337E+07     7199.6         1145.8         1.0000         0.0000    
 
 
           P A R T I C I P A T I O N   F A C T O R S
 
  MODE NO    X-COMPONENT    Y-COMPONENT    Z-COMPONENT    X-ROTATION     Y-ROTATION     Z-ROTATION 
 
-       1      -1.4219       -0.60384         0.0000         0.0000         0.0000        -526.58    
-       2       1.8047        -1.2803         0.0000         0.0000         0.0000        -1808.2    
-       3     -0.14324       -0.98806         0.0000         0.0000         0.0000        -112.56    
-       4     -0.56204        -1.8644         0.0000         0.0000         0.0000        -3327.3    
-       5      0.48616        0.54008         0.0000         0.0000         0.0000         593.41    
+       1      -1.4219       -0.60384         0.0000         0.0000         0.0000       -0.52658    
+       2       1.8047        -1.2803         0.0000         0.0000         0.0000        -1.8082    
+       3     -0.14324       -0.98806         0.0000         0.0000         0.0000       -0.11256    
+       4     -0.56203        -1.8644         0.0000         0.0000         0.0000        -3.3273    
+       5      0.48616        0.54008         0.0000         0.0000         0.0000        0.59341    
 
 
                     E F F E C T I V E   M A S S
 
  MODE NO    X-COMPONENT    Y-COMPONENT    Z-COMPONENT    X-ROTATION     Y-ROTATION     Z-ROTATION 
 
-       1       2.0217        0.36462         0.0000         0.0000         0.0000        2.77290E+05
-       2       3.2570         1.6391         0.0000         0.0000         0.0000        3.26944E+06
-       3      2.05176E-02    0.97625         0.0000         0.0000         0.0000         12671.    
-       4      0.31588         3.4759         0.0000         0.0000         0.0000        1.10709E+07
-       5      0.23635        0.29169         0.0000         0.0000         0.0000        3.52137E+05
+       1       2.0217        0.36462         0.0000         0.0000         0.0000        0.27729    
+       2       3.2570         1.6391         0.0000         0.0000         0.0000         3.2694    
+       3      2.05176E-02    0.97625         0.0000         0.0000         0.0000        1.26707E-02
+       4      0.31588         3.4759         0.0000         0.0000         0.0000         11.071    
+       5      0.23635        0.29169         0.0000         0.0000         0.0000        0.35214    
 
- TOTAL         5.8515         6.7476         0.0000         0.0000         0.0000        1.49824E+07
+ TOTAL         5.8515         6.7476         0.0000         0.0000         0.0000         14.982    
 
 
           THE ANALYSIS HAS BEEN COMPLETED
@@ -309,6 +309,6 @@
 
      JOB TIME SUMMARY
        USER TIME (SEC)      =     0.40    
-       SYSTEM TIME (SEC)    =     0.20    
-       TOTAL CPU TIME (SEC) =     0.60    
-       WALLCLOCK TIME (SEC) =            1
+       SYSTEM TIME (SEC)    =     0.10    
+       TOTAL CPU TIME (SEC) =     0.50    
+       WALLCLOCK TIME (SEC) =            2

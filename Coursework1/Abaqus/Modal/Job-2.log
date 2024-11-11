@@ -3,20 +3,20 @@ Abaqus JOB Job-2
 Abaqus 2022.HF8
 Abaqus License Manager checked out the following licenses:
 Abaqus/Foundation checked out 3 tokens from Flexnet server licensebroker23.
-<109 out of 160 licenses remain available>.
+<137 out of 160 licenses remain available>.
 Begin Analysis Input File Processor
-01/11/2024 14:27:07
+11/11/2024 16:56:30
 Run pre.exe
-01/11/2024 14:27:11
+11/11/2024 16:56:35
 End Analysis Input File Processor
 Begin Abaqus/Standard Analysis
-01/11/2024 14:27:11
+11/11/2024 16:56:35
 Run standard.exe
-01/11/2024 14:27:16
+11/11/2024 16:56:40
 End Abaqus/Standard Analysis
 Begin SIM Wrap-up
-01/11/2024 14:27:18
+11/11/2024 16:56:41
 Run SMASimUtility.exe
-01/11/2024 14:27:18
+11/11/2024 16:56:41
 End SIM Wrap-up
 Abaqus JOB Job-2 COMPLETED

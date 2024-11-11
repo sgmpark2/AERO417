@@ -1,4 +1,4 @@
-Abaqus/Explicit 2022.HF8                         DATE 11-Nov-2024  TIME 17:20:06
+Abaqus/Explicit 2022.HF8                         DATE 11-Nov-2024  TIME 17:22:05
 -------------------------------------------------------------------------------
  PREPROCESSOR WARNING MESSAGES
 -------------------------------------------------------------------------------
@@ -58,7 +58,7 @@ Abaqus/Explicit 2022.HF8                         DATE 11-Nov-2024  TIME 17:20:06
 
 
 
-Abaqus/Explicit 2022.HF8                         DATE 11-Nov-2024  TIME 17:20:09
+Abaqus/Explicit 2022.HF8                         DATE 11-Nov-2024  TIME 17:22:09
 
 The single precision Abaqus/Explicit executable will be used in this analysis.
 
@@ -74,76 +74,76 @@ The single precision Abaqus/Explicit executable will be used in this analysis.
   Scaling factor:  1.0000
               STEP     TOTAL      WALL      STABLE    CRITICAL    KINETIC      TOTAL
 INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
-        0  0.000E+00 0.000E+00  00:00:01 9.062E-05           2  0.000E+00  0.000E+00
+        0  0.000E+00 0.000E+00  00:00:00 9.062E-05           2  0.000E+00  0.000E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
 Output Field Frame Number   0, of   20, at step time 0.000E+00
-      563  1.000E-01 1.000E-01  00:00:01 1.795E-04           2  6.852E+00 -4.693E+00
+      354  6.250E-02 6.250E-02  00:00:01 1.795E-04           2  6.756E+00 -4.674E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number   1, of   20, at step time 1.000E-01
-     1121  2.002E-01 2.002E-01  00:00:01 1.795E-04           2  4.556E-01 -4.687E+00
+Output Field Frame Number   1, of   20, at step time 6.250E-02
+      703  1.251E-01 1.251E-01  00:00:01 1.795E-04           2  5.293E+00 -4.695E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number   2, of   20, at step time 2.002E-01
-     1678  3.001E-01 3.001E-01  00:00:01 1.795E-04           2  5.165E-01 -4.694E+00
+Output Field Frame Number   2, of   20, at step time 1.251E-01
+     1051  1.876E-01 1.876E-01  00:00:01 1.795E-04           2  8.304E-01 -4.687E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number   3, of   20, at step time 3.001E-01
-     2235  4.001E-01 4.001E-01  00:00:01 1.795E-04           2  1.228E-01 -4.695E+00
+Output Field Frame Number   3, of   20, at step time 1.876E-01
+     1399  2.501E-01 2.501E-01  00:00:01 1.795E-04           2  1.289E-01 -4.690E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number   4, of   20, at step time 4.001E-01
-     2792  5.001E-01 5.001E-01  00:00:01 1.795E-04           2  3.170E-02 -4.695E+00
+Output Field Frame Number   4, of   20, at step time 2.501E-01
+     1747  3.125E-01 3.125E-01  00:00:01 1.795E-04           2  5.955E-01 -4.695E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number   5, of   20, at step time 5.001E-01
-     3349  6.000E-01 6.000E-01  00:00:01 1.795E-04           2  2.170E-02 -4.695E+00
+Output Field Frame Number   5, of   20, at step time 3.125E-01
+     2096  3.751E-01 3.751E-01  00:00:02 1.795E-04           2  2.820E-01 -4.695E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number   6, of   20, at step time 6.000E-01
-     3907  7.002E-01 7.002E-01  00:00:01 1.795E-04           2  4.334E-04 -4.695E+00
+Output Field Frame Number   6, of   20, at step time 3.751E-01
+     2444  4.376E-01 4.376E-01  00:00:02 1.795E-04           2  1.018E-02 -4.695E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number   7, of   20, at step time 7.002E-01
-     4464  8.001E-01 8.001E-01  00:00:02 1.795E-04           2  3.101E-03 -4.696E+00
+Output Field Frame Number   7, of   20, at step time 4.376E-01
+     2792  5.001E-01 5.001E-01  00:00:02 1.795E-04           2  3.170E-02 -4.695E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number   8, of   20, at step time 8.001E-01
-     5021  9.001E-01 9.001E-01  00:00:02 1.795E-04           2  8.387E-06 -4.696E+00
+Output Field Frame Number   8, of   20, at step time 5.001E-01
+     3140  5.625E-01 5.625E-01  00:00:02 1.795E-04           2  4.277E-02 -4.695E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number   9, of   20, at step time 9.001E-01
-     5578  1.000E+00 1.000E+00  00:00:02 1.795E-04           2  3.229E-04 -4.696E+00
+Output Field Frame Number   9, of   20, at step time 5.625E-01
+     3489  6.251E-01 6.251E-01  00:00:03 1.795E-04           2  1.131E-02 -4.695E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number  10, of   20, at step time 1.000E+00
-     6135  1.100E+00 1.100E+00  00:00:02 1.795E-04           2  1.716E-05 -4.696E+00
+Output Field Frame Number  10, of   20, at step time 6.251E-01
+     3837  6.876E-01 6.876E-01  00:00:03 1.795E-04           2  8.590E-05 -4.695E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number  11, of   20, at step time 1.100E+00
-     6692  1.200E+00 1.200E+00  00:00:02 1.795E-04           2  2.740E-05 -4.696E+00
+Output Field Frame Number  11, of   20, at step time 6.876E-01
+     4185  7.501E-01 7.501E-01  00:00:03 1.795E-04           2  3.788E-03 -4.696E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number  12, of   20, at step time 1.200E+00
-     7249  1.300E+00 1.300E+00  00:00:02 1.795E-04           2  5.465E-06 -4.696E+00
+Output Field Frame Number  12, of   20, at step time 7.501E-01
+     4533  8.125E-01 8.125E-01  00:00:03 1.795E-04           2  2.441E-03 -4.696E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number  13, of   20, at step time 1.300E+00
-     7806  1.400E+00 1.400E+00  00:00:02 1.795E-04           2  1.633E-06 -4.696E+00
+Output Field Frame Number  13, of   20, at step time 8.125E-01
+     4882  8.751E-01 8.751E-01  00:00:03 1.795E-04           2  2.878E-04 -4.696E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number  14, of   20, at step time 1.400E+00
-     8363  1.500E+00 1.500E+00  00:00:02 1.795E-04           2  1.062E-06 -4.696E+00
+Output Field Frame Number  14, of   20, at step time 8.751E-01
+     5230  9.376E-01 9.376E-01  00:00:04 1.795E-04           2  1.159E-04 -4.696E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number  15, of   20, at step time 1.500E+00
-     8920  1.600E+00 1.600E+00  00:00:03 1.795E-04           2  4.550E-08 -4.696E+00
+Output Field Frame Number  15, of   20, at step time 9.376E-01
+     5578  1.000E+00 1.000E+00  00:00:04 1.795E-04           2  3.229E-04 -4.696E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number  16, of   20, at step time 1.600E+00
-     9477  1.700E+00 1.700E+00  00:00:03 1.795E-04           2  1.530E-07 -4.696E+00
+Output Field Frame Number  16, of   20, at step time 1.000E+00
+     5926  1.063E+00 1.063E+00  00:00:04 1.795E-04           2  1.080E-04 -4.696E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number  17, of   20, at step time 1.700E+00
-    10034  1.800E+00 1.800E+00  00:00:03 1.795E-04           2  3.066E-10 -4.696E+00
+Output Field Frame Number  17, of   20, at step time 1.063E+00
+     6274  1.125E+00 1.125E+00  00:00:05 1.795E-04           2  9.980E-09 -4.696E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number  18, of   20, at step time 1.800E+00
-    10591  1.900E+00 1.900E+00  00:00:03 1.795E-04           2  1.618E-08 -4.696E+00
+Output Field Frame Number  18, of   20, at step time 1.125E+00
+     6623  1.188E+00 1.188E+00  00:00:05 1.795E-04           2  2.049E-05 -4.696E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Output Field Frame Number  19, of   20, at step time 1.900E+00
-    11148  2.000E+00 2.000E+00  00:00:03 1.795E-04           2  8.546E-10 -4.696E+00
+Output Field Frame Number  19, of   20, at step time 1.188E+00
+     6971  1.250E+00 1.250E+00  00:00:05 1.795E-04           2  2.108E-05 -4.696E+00
 INSTANCE WITH CRITICAL ELEMENT: PART-1-1
-Restart Number  1 at 2.0000
-Output Field Frame Number  20, of   20, at step time 2.000E+00
+Restart Number  1 at 1.2500
+Output Field Frame Number  20, of   20, at step time 1.250E+00
   EXPLICIT EXECUTABLE TIME SUMMARY
        USER TIME (SEC)      =  0.30000
-       SYSTEM TIME (SEC)    =  0.20000
-       WALLCLOCK TIME (SEC) =            3
+       SYSTEM TIME (SEC)    =  0.40000
+       WALLCLOCK TIME (SEC) =            5
               INIT (SEC) =          1
-              MAIN (SEC) =          2
+              MAIN (SEC) =          4
 
   THE ANALYSIS HAS COMPLETED SUCCESSFULLY
 

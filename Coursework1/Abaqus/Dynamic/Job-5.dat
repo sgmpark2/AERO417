@@ -1,6 +1,6 @@
 1
 
-   Abaqus 2022.HF8                                  Date 11-Nov-2024   Time 17:20:02
+   Abaqus 2022.HF8                                  Date 11-Nov-2024   Time 17:21:58
    For use by UNIVERSITY OF LIVERPOOL under license from Dassault Systemes or its subsidiary.
 
 
@@ -149,7 +149,7 @@
 
 
      JOB TIME SUMMARY
-       USER TIME (SEC)      =     0.10    
-       SYSTEM TIME (SEC)    =      0.0    
+       USER TIME (SEC)      =      0.0    
+       SYSTEM TIME (SEC)    =     0.10    
        TOTAL CPU TIME (SEC) =     0.10    
-       WALLCLOCK TIME (SEC) =            0
+       WALLCLOCK TIME (SEC) =            2
