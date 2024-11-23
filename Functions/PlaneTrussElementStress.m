@@ -7,6 +7,7 @@ function y = PlaneTrussElementStress(E,L,theta,d)
     x = theta * pi/180;
     C = cos(x);
     S = sin(x);
-    y = E/L*[-C -S C S]* d;
+
+    y = -E/L*[-C -S C S]* d;
 end
 

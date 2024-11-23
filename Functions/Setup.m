@@ -1,9 +1,9 @@
 function [E,A1,A2t5,L1,L2,L3,L4,L5,Theta1,Theta2,Theta3,Theta4,Theta5,K,k] = Setup()
 
     % Material properties and cross-sectional area
-    E = 209e9;   % Young's Modulus (Pa)
+    E = 209e9;    % Young's Modulus (Pa)
     A1 = 1e-3;    % Cross-sectional area (m^2)
-    A2t5 = 1e-4;    % Cross-sectional area (m^2)
+    A2t5 = 1e-4;  % Cross-sectional area (m^2)
 
     %Node Coordinates
 
@@ -12,6 +12,7 @@ function [E,A1,A2t5,L1,L2,L3,L4,L5,Theta1,Theta2,Theta3,Theta4,Theta5,K,k] = Set
     N3 = [1250,225];
     N4 = [0,850];
     N5 = [0,1750];
+
     
     % Lengths of the truss elements
     L1 = (PlaneTrussElementLength(N1(1),N1(2),N2(1),N2(2))) / 1e3;  % Length of elements 1 (m)
