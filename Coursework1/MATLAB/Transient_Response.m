@@ -7,38 +7,6 @@ u2node2 = table2array(a(:,5));
 u2node3 = table2array(a(:,6));
 u2node4 = table2array(a(:,7));
 
-figure(1)
-subplot(2,1,1)
-plot(time_Abaqus,u1node2)
-xlabel('Time (s)')
-ylabel('Displacement in X (m)')
-title('Dynamic Response at node 2 in X direction')
-subplot(2,1,2)
-plot(time_Abaqus,u2node2)
-xlabel('Time (s)')
-ylabel('Displacement in Y (m)')
-title('Dynamic Response at node 2 in Y direction')
-
-figure(2)
-subplot(2,1,1)
-plot(time_Abaqus,u1node3)
-xlabel('Time (s)')
-ylabel('Displacement in X (m)')
-title('Dynamic Response at node 3 in X direction')
-
-
-subplot(2,1,2)
-plot(time_Abaqus,u2node3)
-xlabel('Time (s)')
-ylabel('Displacement in Y (m)')
-title('Dynamic Response at node 3 in Y direction')
-
-figure(3)
-plot(time_Abaqus,u2node4)
-xlabel('Time (s)')
-ylabel('Displacement in Y (m)')
-title('Dynamic Response at node 4 in Y direction Abaqus')
-hold on
 
 %Run the setup function
 [E,A1,A2t5,L1,L2,L3,L4,L5,Theta1,Theta2,Theta3,Theta4,Theta5,K,k] = Setup();
@@ -107,34 +75,60 @@ for i = 2:n_steps-1
 end
 
 
-figure(4);
-subplot(2,1,1);
+figure(1)
+subplot(2,1,1)
+plot(time_Abaqus,u1node2)
+grid on
+hold on
+grid on
 plot(t,u(1,:));
 xlabel('Time (s)')
 ylabel('Displacement in X (m)')
 title('Dynamic Response at node 2 in X direction')
-
-subplot(2,1,2);
+legend('Abaqus','Matlab')
+subplot(2,1,2)
+plot(time_Abaqus,u2node2)
+hold on
+grid on
 plot(t,u(2,:));
+legend('Abaqus','Matlab')
 xlabel('Time (s)')
 ylabel('Displacement in Y (m)')
 title('Dynamic Response at node 2 in Y direction')
 
-figure(5);
-subplot(2,1,1);
+figure(2)
+subplot(2,1,1)
+plot(time_Abaqus,u1node3)
+grid on
+hold on
+grid on
 plot(t,u(3,:));
+legend('Abaqus','Matlab')
 xlabel('Time (s)')
 ylabel('Displacement in X (m)')
 title('Dynamic Response at node 3 in X direction')
 
-subplot(2,1,2);
+
+subplot(2,1,2)
+plot(time_Abaqus,u2node3)
+grid on
+hold on
 plot(t,u(4,:));
+legend('Abaqus','Matlab')
 xlabel('Time (s)')
 ylabel('Displacement in Y (m)')
 title('Dynamic Response at node 3 in Y direction')
 
-%figure(6);
+figure(3)
+plot(time_Abaqus,u2node4)
+hold on
+grid on
 plot(t,u(5,:));
-%xlabel('Time (s)')
-%ylabel('Displacement in Y (m)')
-%title('Dynamic Response at node 4 in Y direction Matlab')
+xlabel('Time (s)')
+ylabel('Displacement in Y (m)')
+title('Dynamic Response at node 4 in Y direction')
+legend('Abaqus','Matlab')
+
+
+
+

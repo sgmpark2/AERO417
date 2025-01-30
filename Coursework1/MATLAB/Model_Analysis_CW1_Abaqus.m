@@ -84,8 +84,9 @@ for i = 1:height(natural_frequencies)
 
 
 
-        plot([x1, x2], [y1, y2], 'r--', 'LineWidth', 1.5); % Deformed shape
-        plot([xA1, xA2], [yA1, yA2], 'g--', 'LineWidth', 1.5); % Deformed shape
+        plot([x1, x2], [y1, y2], 'r--', 'LineWidth', 1.5); % Deformed shape Matlab
+        plot([xA1, xA2], [yA1, yA2], 'g--', 'LineWidth', 1.5); % Deformed shape Abaqus
+        legend('','non deformed','Matlab','Abaqus')
     
     end
     %titles for graphs and labels
